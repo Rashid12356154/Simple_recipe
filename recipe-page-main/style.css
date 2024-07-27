@@ -1,0 +1,192 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: outfit;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: young;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+
+--Brown-800: hsl(14, 45%, 36%);
+
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+}
+body{
+    font-family: outfit;
+}
+h1{
+    font-family: young;
+    font-size: 2.5rem;
+    color: var(--Stone-900);
+}
+h2{
+    font-family: young;
+    font-size: 2rem;
+    color: var(--Rose-800);
+}
+h3{
+    font-family: outfit;
+    font-size: 1.7rem;
+    color: var(--Rose-800);
+}
+body{
+    background-color: var(--Stone-100);
+    width:100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  
+}
+
+.container{
+    width: 75%;
+    padding: 40px;
+    background-color: var(--White);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header .hero{
+    width: 100%;
+    height: 450px;
+    
+    background-image: url('assets/images/image-omelette.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.header-info{
+    padding: 20px;
+}
+.header-info h1{
+    margin-bottom: 20px;
+}
+.header-info p{
+    color: var(--Stone-600);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+.preparetion{
+    background-color: var(--Stone-100);
+    padding: 15px;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 8px;
+}
+.preparetion h3{
+    margin-bottom: 10px;
+}
+.preparetion ul{
+    padding: 10px 30px;
+}
+.preparetion ul li{
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: var(--Stone-600);
+}
+.preparetion ul li span{
+    color: var(--Stone-900);
+    font-weight: 500;
+}
+.ingredient{
+    padding: 20px;
+    margin: 0px auto;
+    width: 90%;
+    border-bottom: 2px solid var(--Stone-150);
+}
+.ingredient h2{
+    margin-bottom: 10px;
+}
+.ingredient ul{
+    padding: 10px 20px;
+}
+.ingredient ul li{
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: var(--Stone-600);
+}
+.instruction {
+    padding: 20px;
+    margin: 0px auto;
+    width: 90%;
+    border-bottom: 2px solid var(--Stone-150);
+}
+.instruction h2{
+    margin-bottom: 10px;
+}
+.instruction ol{
+    padding: 10px 20px;
+}
+.instruction ol li{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: var(--Stone-600);
+}
+.instruction ol li span{
+    color: var(--Stone-900);
+    font-weight: 500;
+}
+footer{
+    padding: 20px;
+    width: 90%;
+    margin: 0px auto;
+}
+footer h2{
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--Stone-600);
+}
+footer .flex{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--Stone-150);
+    padding: 5px 0px;
+}
+footer .flex p{
+    margin-top: 10px;
+    color: var(--Stone-600);
+    font-weight: 500;
+    text-align: left;
+}
+footer .flex p span{
+    color: var(--Rose-800);
+    font-weight: 600;
+}
+@media only screen and (max-width: 740px) {
+    body{
+        padding: 0px;
+    }
+    .container{
+        width: 100%;
+        background-color: none;
+        padding: 0px;
+    }
+    .hero{
+        height: 300px;
+    }
+}
